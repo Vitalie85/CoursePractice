@@ -6,24 +6,22 @@ public class MinutesConverter {
         double days = 0;
         double years = 0;
 
-        converterDays(minutes, days, years);
+        converterDays(minutes);
 
     }
-        static public void converterDays(long givenMinutes, double givenDays, double years) {
-        double minutesDay = 1440;
+        static public void converterDays(long givenMinutes) {
+        int minutesDay = 1440;
+        double convMinToDays = givenMinutes/minutesDay;
+        double convDaysToYears = convMinToDays/365;
+        double days = (convDaysToYears % 1);
+        double years = convDaysToYears - days;
 
-        givenDays = givenMinutes/minutesDay;
+            days *=365;
 
-        years = givenDays/365;
+            //System.out.println(givenMinutes +" minutes is equal to: " + years + " years and " + days + " days." );
 
-        givenDays = (years-(int)years)*365;
-
-
-        System.out.println(givenMinutes +" minutes is equal to: " + (int)years + " years" + " and " + (int)givenDays + " days." );
-
+        System.out.println(givenMinutes+" minutes is equal to: " + String.format("%.0f",years) + " years and " + String.format("%.0f",days) + " days" );
         }
-
-
 }
 
 
