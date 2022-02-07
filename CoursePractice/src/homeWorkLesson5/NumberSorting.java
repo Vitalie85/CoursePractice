@@ -16,9 +16,9 @@ public class NumberSorting {
         } else if (number < 0) {
             System.out.println("negative");
         }
-        if (number < 0 && -number < 1) {
+         if (number < 1  && number > 0 || number < 0 && -number < 1) {
             System.out.println("small");
-        } else if (number > 1000_000) {
+        } else if (-number > 1000_000 ||  number > 1000_000 ) {
             System.out.println("large");
         }
 

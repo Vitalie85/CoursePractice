@@ -7,9 +7,8 @@ public class RectangleArea {
     int lenght;
     int area;
 
-    public int  areaCalculator(int width, int lenght) {
+    public void  areaCalculator(int width, int lenght) {
         area = width * lenght;
-        return area;
     }
     public static void main(String[] args) {
      RectangleArea rectangle1 = new RectangleArea();
@@ -26,12 +25,12 @@ public class RectangleArea {
              rectangle2.lenght =sc.nextInt();
      sc.close();
 
-     int areaRectangle1 = rectangle1.areaCalculator (rectangle1.width, rectangle1.lenght);
-     int areaRectangle2 = rectangle2.areaCalculator (rectangle2.width, rectangle2.lenght);
+     rectangle1.areaCalculator (rectangle1.width, rectangle1.lenght);
+     rectangle2.areaCalculator (rectangle2.width, rectangle2.lenght);
 
-     if(areaRectangle1>areaRectangle2){
+     if(rectangle1.area>rectangle2.area){
          System.out.println("First triangle has greater area.");
-     } else if (areaRectangle1<areaRectangle2) {
+     } else if (rectangle1.area<rectangle2.area) {
          System.out.println("Second triangle has greater area.");
      } else {
          System.out.println("Triangles have same area.");
