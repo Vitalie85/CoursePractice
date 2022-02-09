@@ -11,7 +11,7 @@ public class DivisibleNumbers {
                 j++;
                 if (j == 10){
                 System.out.println( );
-                j = j-10;
+                j = 0;
                 }
             }
         }
