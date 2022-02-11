@@ -8,7 +8,7 @@ public class minMaxValueOfArray {
         int minVal = 0;
         int[] arrayOne = new int []{1,4,7,20,-1,30};
         for (int i = 0; i < arrayOne.length; i++) {
-            if (arrayOne[0] < arrayOne[i]) {
+            if (arrayOne[0] <= arrayOne[i]) {
                 maxVal = arrayOne[i];
             }
             if(arrayOne[0] >= arrayOne[i]){
