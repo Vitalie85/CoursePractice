@@ -9,6 +9,7 @@ public class RectangleArea {
 
     public void  areaCalculator(int width, int lenght) {
         area = width * lenght;
+        System.out.println("Width"+ width+" "+ lenght);
     }
     public static void main(String[] args) {
      RectangleArea rectangle1 = new RectangleArea();
