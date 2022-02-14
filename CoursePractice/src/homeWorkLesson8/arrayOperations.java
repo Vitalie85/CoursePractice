@@ -9,7 +9,7 @@ public class arrayOperations {
         int summ = 0;
         int avg = 0;
 
-        int[] arrayOne = new int[]{18, 4, 7, 20, 15, 30};
+        int[] arrayOne = {18, 4, 7, 20, 15, 30};
 
         for (int i = 0; i < arrayOne.length; i++) {
             summ += arrayOne[i];
