@@ -10,4 +10,25 @@ package homeWorkLesson10.wrapConvert;
         "2354.56f" -> float*/
 
 public class WrapConvert {
+    public static void main(String[] args) {
+        Boolean booleanWrap = Boolean.valueOf("tRue");
+        Byte byteWrap = Byte.valueOf("120");
+        Short shortWrap = Short.valueOf("32000");
+        Integer intWrap = Integer.valueOf("147895632");
+        Long longWrap = Long.valueOf( "987654321987654321");
+        Double doubleWrap = Double.valueOf("4444.5d");
+        Float floatWrap = Float.valueOf("2354.56f");
+
+
+        System.out.println(booleanWrap);
+        System.out.println(byteWrap);
+        System.out.println(shortWrap);
+        System.out.println(intWrap);
+        System.out.println(longWrap);
+        System.out.println(doubleWrap);
+        System.out.println(floatWrap);
+
+    }
+
+
 }
