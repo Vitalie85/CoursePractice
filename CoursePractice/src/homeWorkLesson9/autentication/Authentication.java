@@ -1,4 +1,4 @@
-package homeWorkLesson9.authentication;
+package homeWorkLesson9.autentication;
 /*You have to design the code such that the user has only three tries to
 guess the correct pin of the account. You set the pin as a constant with a final
 attribute. When correct, display “Correct, welcome back.”;  When incorrect,  display
