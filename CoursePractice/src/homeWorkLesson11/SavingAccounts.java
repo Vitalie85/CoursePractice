@@ -22,12 +22,20 @@ public class SavingAccounts {
         SavingAccounts saver2 = new SavingAccounts();
 
         saver1.savingsBalance = 2000;
+        double newBalanceSaver1;
         saver2.savingsBalance = 3000;
-        SavingAccounts.annualInterestRate = 5;
+        SavingAccounts.annualInterestRate = 4;
 
         monthlyInterest = saver1.calculateMonthlyInterest(saver1.savingsBalance, SavingAccounts.annualInterestRate);
-        double newBalance = saver1.getNewBalance( monthlyInterest);
+        newBalanceSaver1 = saver1.getNewBalance( monthlyInterest);
 
-        System.out.println(" Monthly interest for saver1, with initial amount: " + saver1.savingsBalance + "USD will be " + String.format("%.2f",monthlyInterest)  + " and new ballance will be: " + newBalance );
+        System.out.println(" Monthly interest for saver1: "  + String.format("%.2f",monthlyInterest)+" USD/momth,  new ballance: " + newBalanceSaver1 );
+        SavingAccounts.annualInterestRate = 5;
+
+        monthlyInterest = saver1.calculateMonthlyInterest(newBalanceSaver1, SavingAccounts.annualInterestRate);
+
+        newBalanceSaver1 = saver1.getNewBalance( monthlyInterest);
+
+        System.out.println(" Monthly interest for saver1, after raising interest rate: "  + String.format("%.2f",monthlyInterest)+" USD/momth,  new ballance: " + newBalanceSaver1 );
         }
     }
