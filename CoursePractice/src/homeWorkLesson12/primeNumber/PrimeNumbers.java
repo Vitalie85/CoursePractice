@@ -1,4 +1,4 @@
-package homeWorkLesson12.primeNimber;
+package homeWorkLesson12.primeNumber;
 
 
 public class PrimeNumbers {
