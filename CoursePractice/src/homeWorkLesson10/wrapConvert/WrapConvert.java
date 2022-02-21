@@ -1,4 +1,4 @@
-package homeWorkLesson10.wrapConvert;
+package homeWorkLesson9.homeWorkLesson10.wrapConvert;
 /*Create a program to convert the following String values to the appropriate primitive
         data types (by using Wrapper classes):
         "tRue" -> boolean

@@ -1,4 +1,4 @@
-package homeWorkLesson10.weekDay;
+package homeWorkLesson9.homeWorkLesson10.weekDay;
 /*Create a enum named Weekday that would keep the days of the week:
         MONDAY, TUESDAY... SUNDAY. Define two methods in the enumeration: isWeekDay () and
         isHoliday (), both of the boolean return type, which must indicate whether the value in the

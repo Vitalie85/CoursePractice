@@ -1,8 +1,6 @@
-package homeWorkLesson10.EnumMonths;
+package homeWorkLesson9.homeWorkLesson10.EnumMonths;
 /*Define an enum that will store months of a calendaristic year.  Parse the
         values of this enum, and print to console*/
-
-import java.util.Locale;
 
 public enum Months {
     JANUARY(31, 1, "Winter", "Jan"),
