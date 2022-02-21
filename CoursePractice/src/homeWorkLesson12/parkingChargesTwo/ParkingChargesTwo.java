@@ -13,9 +13,9 @@ public class ParkingChargesTwo {
 
         for (Customer customer:customers){
 
-            System.out.println(customer.name + " " + charges.calculateCharges(customer.hourParked));
+            System.out.println(customer.name + " " + charges.calculateCharges(customer.hoursParked));
 
-            total = charges.totalCollected(charges.calculateCharges(customer.hourParked));
+            total = charges.totalCollected(charges.calculateCharges(customer.hoursParked));
        }
         System.out.println("Total collected: " + total);
     }
