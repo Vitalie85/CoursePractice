@@ -1,49 +1,39 @@
 package homeWorkLesson11.SavingAccountsVersion2;
 
-import homeWorkLesson11.SavingAccounts;
-
 public class SavingAccountsTwo {
     private double savingsBalance;
     public String name;
-    static double annualInterestRate;
+    private static double annualInterestRate;
 
-    public SavingAccountsTwo() {
-    }
     public SavingAccountsTwo(String name, double savingsBalance) {
         this.name = name;
         this.savingsBalance = savingsBalance;
-
-        SavingAccountsTwo[] saver = new SavingAccountsTwo[2];
-        saver[0] = new SavingAccountsTwo("saver1", 2000);
-        saver[1] = new SavingAccountsTwo("saver2", 3000);
     }
 
-    public SavingAccountsTwo(double annualInterestRate) {
-        SavingAccountsTwo.annualInterestRate = annualInterestRate;
-
-        SavingAccountsTwo[] rates = new SavingAccountsTwo[2];
-        rates[0] = new SavingAccountsTwo(4);
-        rates[1] = new SavingAccountsTwo(5);
-
+    public double calculateMonthlyInterest() {
+        savingsBalance += ((savingsBalance * annualInterestRate / 100) / 12);
+        return savingsBalance;
     }
 
-
-    private double calculateMonthlyInterest(double savingsBalance, double annualInterestRate) {
-        return ((savingsBalance * annualInterestRate / 100) / 12);
-
-    }
-
-    private double getNewBalance(double monthlyInterest) {
-        double newBalance = (monthlyInterest * 12) + savingsBalance;
-        return newBalance;
-
+    public static void setAnnualInterestRate(double newRate) {
+        annualInterestRate = newRate;
     }
 
     public static void main(String[] args) {
+        SavingAccountsTwo[] savers = new SavingAccountsTwo[2];
+        savers[0] = new SavingAccountsTwo("saver1", 2000);
+        savers[1] = new SavingAccountsTwo("saver2", 3000);
 
-        SavingAccountsTwo saving = new SavingAccountsTwo();
+        SavingAccountsTwo.setAnnualInterestRate(4);
 
+        for (SavingAccountsTwo saver : savers) {
+            System.out.println(saver.name + "-4%--" +saver.calculateMonthlyInterest());
+        }
+
+        SavingAccountsTwo.setAnnualInterestRate(5);
+
+        for (SavingAccountsTwo saver : savers) {
+            System.out.println(saver.name + "-5%--" +saver.calculateMonthlyInterest());
+        }
     }
 }
-
-

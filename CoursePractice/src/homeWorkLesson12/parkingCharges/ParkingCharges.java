@@ -8,7 +8,7 @@ public class ParkingCharges {
     double maxFee = 10;
     int defaultParkingPeriod = 3;
 
-    public double calculateCharges(double parkingPeriod){
+    private  double calculateCharges(double parkingPeriod){
         if(parkingPeriod <= 3) {
             return fee;
         }else if (parkingPeriod > 3 && parkingPeriod < 24) {
@@ -18,7 +18,6 @@ public class ParkingCharges {
         }
         return 0;
     }
-
     public static void main(String[] args) {
       double totalToPay;
       double totalCollected = 0;
