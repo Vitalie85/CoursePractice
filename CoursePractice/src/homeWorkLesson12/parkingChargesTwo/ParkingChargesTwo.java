@@ -1,6 +1,5 @@
 package homeWorkLesson12.parkingChargesTwo;
 
-import javax.sound.midi.Soundbank;
 
 public class ParkingChargesTwo {
     public static void main(String[] args) {

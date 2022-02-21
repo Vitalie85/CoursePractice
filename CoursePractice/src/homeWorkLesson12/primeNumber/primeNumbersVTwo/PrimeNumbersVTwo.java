@@ -9,7 +9,6 @@ public class PrimeNumbersVTwo {
         }
         return false;
     }
-
     public static void main(String[] args) {
         PrimeNumbersVTwo prime = new PrimeNumbersVTwo();
         int value = 10_000;
@@ -31,7 +30,6 @@ public class PrimeNumbersVTwo {
                 System.out.println();
                 countPrints = 0;
             }
-
         }
         System.out.println('\n' + "In range { 0; " + value + "} " + "were found " + count + " prime numbers.");
     }

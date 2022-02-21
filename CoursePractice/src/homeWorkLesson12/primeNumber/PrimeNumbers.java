@@ -24,7 +24,7 @@ public class PrimeNumbers {
                 countPrints = 0;
             }
         }
-        System.out.println('\n'+"In range { 0; "+ value+"} "+ "were found "+ count +" prime numbers.");
+        System.out.println('\n'+"In range { 0; " + value+ "} "+ "were found "+ count +" prime numbers.");
     }
 }
 
